@@ -1,1 +1,0 @@
-thanks to [@wojtekhugo](https://github.com/wojtekhugo) for the contribution !!

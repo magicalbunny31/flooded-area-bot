@@ -1,22 +1,29 @@
-# 💻 vscode
-.vscode/
-*.code-workspace
 
-# 🤖 random code
-code_snippets/
+# 💻 vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# 🔐 secrets
+DOTENV_KEY
+.env*
+.private*
+!.env.project
+!.env.sample
+!.env.vault
 
 # 🎶 music
-assets/music-player/*.ogg
-assets/music-player/*.mp3
+src/assets/music-player/*.ogg
+src/assets/music-player/*.mp3
 
-# 📦 databases
-database/
+# 🚧 temporary
+util/
 
-# 📜 .env
-.env
+# 📜 logs
+logs/
 
 # 📦 dependencies
 node_modules/
-
-# 🔑 Google Cloud Platform key
-GCP-KEY_*.json
