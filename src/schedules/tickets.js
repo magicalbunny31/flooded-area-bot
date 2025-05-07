@@ -93,7 +93,7 @@ export default async client => {
                   await user.send({
                      embeds: [
                         new Discord.EmbedBuilder()
-                           .setColor(colours.flooded_area)
+                           .setColor(colours.flooded_area_bot)
                            .setTitle(`\\📣 Report a Player`)
                            .setDescription(strip`
                               > - Your report has been __deleted due to not being submitted__ for over a day.

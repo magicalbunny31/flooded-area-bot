@@ -47,7 +47,7 @@ export default async interaction => {
    // embeds
    const embeds = [
       new Discord.EmbedBuilder()
-         .setColor(interaction.user.accentColor || (await interaction.user.fetch(true)).accentColor || colours.flooded_area)
+         .setColor(interaction.user.accentColor || (await interaction.user.fetch(true)).accentColor || colours.flooded_area_bot)
          .setAuthor({
             iconURL: interaction.user.displayAvatarURL(),
             name: interaction.user.displayName === interaction.user.username

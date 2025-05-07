@@ -45,7 +45,7 @@ export default async interaction => {
    const ticketLogs = await interaction.guild.channels.fetch(FloodedAreaCommunityChannels.TicketLogs);
 
    const logEmbed = new Discord.EmbedBuilder()
-      .setColor(colours.flooded_area)
+      .setColor(colours.flooded_area_bot)
       .setTitle(strip`
          ${interaction.channel.parent?.id === FloodedAreaCommunityChannels.ReportAPlayer ? `📣 Report a Player` : `🔨 Ban Appeals`}
          🎫 Ticket #${ticketNumber} Closed

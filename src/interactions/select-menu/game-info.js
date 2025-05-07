@@ -468,7 +468,7 @@ export default async interaction => {
          // embeds
          embeds.push(
             new Discord.EmbedBuilder()
-               .setColor(colours.flooded_area)
+               .setColor(colours.flooded_area_bot)
                .setDescription(strip`
                   - **Boss Area**: *demo video* - [view video](https://youtu.be/SoA_wO-f32k)
                   - **Boss Area**: *victory screenshot* - [view image](https://nuzzles.dev/assets/discord/area-communities-bot/game-info/boss-area-victory-screenshot.png)
