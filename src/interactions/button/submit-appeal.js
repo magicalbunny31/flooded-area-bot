@@ -133,7 +133,7 @@ export default async interaction => {
       `,
       files: [
          new Discord.AttachmentBuilder()
-            .setFile(`./assets/report-a-player/oh-moderators.gif`)
+            .setFile(`./src/assets/report-a-player/oh-moderators.gif`)
       ]
    });
 
