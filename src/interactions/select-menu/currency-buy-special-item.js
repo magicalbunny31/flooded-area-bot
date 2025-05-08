@@ -29,7 +29,7 @@ export default async interaction => {
 
    if (isSameCommandUser || isEphemeral)
       await interaction.update({
-         components: deferComponents(interaction.customId, interaction.values, interaction.message.components)
+         components: deferComponents(interaction.customId, interaction.message.components, interaction.values)
       });
 
    else // this isn't the same person who used the command: create a new reply to the interaction
