@@ -1,6 +1,6 @@
 {
    "name": "flooded-area-bot",
-   "version": "4.0.1",
+   "version": "4.0.2",
    "description": "🌊 flooded area community's discord bot",
    "main": "index.js",
    "type": "module",
@@ -49,6 +49,6 @@
       "globals": "^16.1.0"
    },
    "engines": {
-      "node": ">=22"
+      "node": ">=22.12.0"
    }
 }
