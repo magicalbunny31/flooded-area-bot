@@ -141,7 +141,8 @@ export default async client => {
       `flooded area mfs after killing a moderator`,
       `what the actual ####`,
       `@welololol since I didn't get accepted for mod, my team and I have been building a server cra`,
-      `📦🦊`
+      `📦🦊`,
+      `(icey was here)`
    ];
    const status = choice(statuses);
 
