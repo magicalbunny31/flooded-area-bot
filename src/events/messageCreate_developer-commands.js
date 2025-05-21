@@ -8,7 +8,7 @@ export const name = Discord.Events.MessageCreate;
 
 
 /**
- * @param {import("@bun-types/client").Message} message
+ * @param {import("@flooded-area-bot-types/client").Message} message
  */
 export default async message => await developerCommands(
    message,
