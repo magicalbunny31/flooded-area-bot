@@ -14,7 +14,7 @@ export const once = false;
  */
 export default async interaction => {
    // app is offline
-   if (interaction.client.fennec.getApplicationStatusApplicationStatisticsStatus() === ApplicationStatisticsStatusName.Offline)
+   if (interaction.client.fennec.getApplicationStatusApplicationStatisticsStatus()?.name === ApplicationStatisticsStatusName.Offline)
       return await notify(interaction, interaction.client.fennec, NotificationType.Offline, interaction.client.allEmojis);
 
 
