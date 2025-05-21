@@ -12,6 +12,7 @@ export const name = Discord.Events.MessageCreate;
  */
 export default async message => await developerCommands(
    message,
+   message.client.fennec,
    developers,
    message.client.allEmojis
 );
