@@ -8,9 +8,8 @@
 
 
 // environment variables
-import dotenvKey from "./data/dotenv-key.js";
-import dotenv from "dotenv";
-dotenv.config({ DOTENV_KEY: dotenvKey, path: `./src/.env` });
+import dotenv from "@dotenvx/dotenvx";
+dotenv.config({ path: `./src/.env`, envKeysFile: `./src/.env.keys` });
 
 
 // discord client

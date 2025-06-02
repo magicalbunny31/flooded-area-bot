@@ -10,14 +10,16 @@ pipeline {
       stage("build") {
          steps {
             echo "✨ building.."
-            sh "npm install"
+            sh "npm install --production"
          }
       }
       stage("start") {
          steps {
             echo "✨ starting.."
-            withCredentials([ string(credentialsId: "DOTENV_KEY_FLOODED_AREA_BOT", variable: "DOTENV_KEY") ]) {
-               sh 'echo $DOTENV_KEY > DOTENV_KEY'
+            dir("src") {
+               withCredentials([ file(credentialsId: "DOTENVX_ENV_KEYS_FOX_KIT", variable: "DOTENVX_ENV_KEYS") ]) {
+                  writeFile file: ".env.keys", text: readFile(DOTENVX_ENV_KEYS), encoding: "UTF-8"
+               }
             }
             sh "npm start"
          }
