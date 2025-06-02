@@ -17,7 +17,7 @@ pipeline {
          steps {
             echo "✨ starting.."
             dir("src") {
-               withCredentials([ file(credentialsId: "DOTENVX_ENV_KEYS_FOX_KIT", variable: "DOTENVX_ENV_KEYS") ]) {
+               withCredentials([ file(credentialsId: "DOTENVX_ENV_KEYS_FLOODED_AREA_BOT", variable: "DOTENVX_ENV_KEYS") ]) {
                   writeFile file: ".env.keys", text: readFile(DOTENVX_ENV_KEYS), encoding: "UTF-8"
                }
             }
