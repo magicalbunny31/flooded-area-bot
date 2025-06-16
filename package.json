@@ -12,8 +12,8 @@
       "restart": "node ./src/pm2/restart.js",
       "delete": "node ./src/pm2/delete.js",
       "dotenvx-precommit": "dotenvx ext precommit",
-      "dotenvx-encrypt-env": "dotenvx encrypt -f ./src/.env -fk ./.env.keys",
-      "dotenvx-decrypt-env": "dotenvx decrypt -f ./src/.env -fk ./.env.keys"
+      "dotenvx-encrypt-env": "dotenvx encrypt -f ./src/.env -fk ./src/.env.keys",
+      "dotenvx-decrypt-env": "dotenvx decrypt -f ./src/.env -fk ./src/.env.keys"
    },
    "repository": {
       "type": "git",
