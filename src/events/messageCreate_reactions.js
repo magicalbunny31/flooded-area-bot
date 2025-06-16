@@ -35,5 +35,5 @@ export default async message => {
 
    // this message's content includes "617" or "6/17" (by itself, NOT in stuff like ids)
    if ([ `617`, `6/17` ].some(content => message.content.split(` `).includes(content)))
-      await message.react(choice([ `<:617:1119576849752793129>`, `<:date617:1235983484854472735>`, `<:old617:1119577426037575721>`, `<:underlined617:1197298104282665040>` ]));
+      await message.react(choice([ message.client.allEmojis[`617`], message.client.allEmojis.date617, message.client.allEmojis.old617, message.client.allEmojis.underlined617 ]));
 };
